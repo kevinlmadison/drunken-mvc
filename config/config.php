@@ -1,14 +1,13 @@
 <?php
 
-$db_name = "";
-$user = "";
-$pass = "";
-$host = "";
-$url = "";
-$title = "";
-$default_controller = "";
+$db_name = ""; // name of the database to connect to
+$user = ""; // username to mysql
+$pass = ""; // password to mysql
+$host = ""; // where is mysql located. defaults to localhost if left empty
+$url = ""; // url of your website
+$title = ""; // title of your website
+$default_controller = ""; // default controller. Leave blank if you don't know.
 $debug = TRUE;
-
 
 
 /* Change Below At Your Own Risk */
