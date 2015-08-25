@@ -17,10 +17,30 @@ In order to create a new page, 3 files need to be created. For this example, we 
 + /applications/models/TestModel.php
 + /applications/views/test_view.php
 
-This can be automated by using an included script generate.pl in the applications folder.
-**Make sure this file isn't deployed when you go live.**
+You can find template files for the model, view, and controller parts in /application/template
+Copy template.php to controllers/test.php
 
-Running generate.pl will automatically create these files based on templates. These templates will work off the bat, however, you won't see much since you'll need to setup what data to retrieve from your database.
+Open test.php and replace Template in the classname with Test.
+Within the controller file, replace all occurences of the name "TemplateModel" with "TestModel"
+
+Finally, find the line
+```php
+$this->get_view()->render('common/template_view');
+```
+with
+```php
+$this->get_view()->render('common/test_view');
+```
+
+Copy TemplateModel.php to models/TestModel.php
+
+Replace the classname TemplateModel with TestModel.
+This should be all you need to change until you want to start adding DB access methods.a
+
+Copy template_view.php to views/test_view.php
+
+You don't need to replace anything in template_view.php. Just copy it. Later on of course you'll want to actually build the display page here. 
+
 
 ## Feature List
 
