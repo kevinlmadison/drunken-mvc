@@ -1,9 +1,11 @@
 <?php
-class Model
-{
+class Model {
     protected $db;
-    public function __construct()
-    {
+    public function __construct() {
         $this->db = new MysqliDb(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    }
+
+    public function getDatabase() {
+        return $this->db;
     }
 }

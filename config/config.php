@@ -5,7 +5,7 @@ $user = ""; // username to mysql
 $pass = ""; // password to mysql
 $host = ""; // where is mysql located. defaults to localhost if left empty
 $url_path = ""; // url of your website
-$website_title = ""; // title of your website
+$title = ""; // title of your website
 $default_controller = ""; // default controller. Leave blank if you don't know.
 $debug = TRUE;
 
@@ -28,6 +28,6 @@ define('DB_USER', $user);
 define('DB_PASSWORD', $pass);
 define('DB_HOST', $host);
 define('PATH', $url_path);
-define('WEBSITE_TITLE', $website_title);
+define('WEBSITE_TITLE', $title);
 
 define('DEFAULT_CONTROLLER', $default_controller);
